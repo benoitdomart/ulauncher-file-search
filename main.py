@@ -28,8 +28,13 @@ class KeywordQueryEventListener(EventListener):
             return
         
         init_path = '/home/ben/Documents/Cours/'
+        
+        nb_dir = init_path.count('/') - 1
+        
+        dir_to_hide = '[^/]*/' * nb_dir
+        log.debug(f'dir_to_hide = {dir_to_hide}')
 
-        parameters = f"find {init_path} | sed 's|^/[^/]*/[^/]*/[^/]*/[^/]*/||'"
+        parameters = f"find {init_path} | sed 's|^/" + dir_to_hide + "||' "
         
         log.debug(f'Query = {query}')
         for parameter in query.split(' '):
