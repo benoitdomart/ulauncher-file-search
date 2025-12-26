@@ -1,0 +1,19 @@
+{
+  "required_api_version": "2",
+  "name": "Demo extension",
+  "description": "Extension Description",
+  "developer_name": "Ben",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "demo_kw",
+      "type": "keyword",
+      "name": "Demo",
+      "description": "Demo extension",
+      "default_value": "f"
+    }
+  ]
+}
