@@ -27,7 +27,25 @@ class KeywordQueryEventListener(EventListener):
         if not query:
             return
         
-        init_path = '/home/ben/Documents/Cours/'
+        ##################
+        # Gestion du key_word.
+        keyword = event.get_keyword()
+        # Find the keyword id using the keyword (since the keyword can be changed by users)
+        for kw_id, kw in list(extension.preferences.items()):
+            if kw == keyword:
+                keyword_id = kw_id
+
+        if keyword_id == "cours":
+            init_path = '/home/ben/Documents/Cours/'
+        elif keyword_id == "synology":
+            init_path = '/home/ben/Documents/SynologyDrive/'
+        elif keyword_id == "git":
+            init_path = '/home/ben/Documents/GIT_Projets/'
+        elif keyword_id == "all":
+            init_path = '/home/ben/Documents/'
+        ##################
+        
+        
         
         nb_dir = init_path.count('/') - 1
         

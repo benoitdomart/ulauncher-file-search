@@ -9,11 +9,32 @@
   },
   "preferences": [
     {
-      "id": "ulauncher_search",
+      "id": "cours",
       "type": "keyword",
       "name": "Recherche",
       "description": "Recherche de fichiers dans /home/ben/Documents/Cours",
       "default_value": "c"
+    },
+    {
+      "id": "synology",
+      "type": "keyword",
+      "name": "Recherche",
+      "description": "Recherche de fichiers dans /home/ben/Documents/SynologyDrive",
+      "default_value": "s"
+    },
+    {
+      "id": "git",
+      "type": "keyword",
+      "name": "Recherche",
+      "description": "Recherche de fichiers dans /home/ben/Documents/GIT_Projets",
+      "default_value": "git"
+    },
+    {
+      "id": "all",
+      "type": "keyword",
+      "name": "Recherche",
+      "description": "Recherche de fichiers dans /home/ben/Documents",
+      "default_value": "a"
     }
   ]
 }
