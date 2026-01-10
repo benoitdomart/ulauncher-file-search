@@ -51,8 +51,9 @@ class KeywordQueryEventListener(EventListener):
         
         dir_to_hide = '[^/]*/' * nb_dir
         log.debug(f'dir_to_hide = {dir_to_hide}')
-
-        parameters = f"find {init_path} | sed 's|^/" + dir_to_hide + "||' "
+        
+        # On ne recherche pas dans les dossiers ".git".
+        parameters = f"find {init_path} -not -path '*/.git/*' | sed 's|^/" + dir_to_hide + "||' "
         
         log.debug(f'Query = {query}')
         for parameter in query.split(' '):
