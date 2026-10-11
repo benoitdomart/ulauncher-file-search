@@ -40,7 +40,7 @@ class KeywordQueryEventListener(EventListener):
         elif keyword_id == "synology":
             init_path = '/home/ben/Documents/SynologyDrive/'
         elif keyword_id == "git":
-            init_path = '/home/ben/Documents/GIT_Projets/'
+            init_path = '/home/ben/Documents/GIT_Projects/'
         elif keyword_id == "all":
             init_path = '/home/ben/Documents/'
         ##################
