@@ -26,7 +26,7 @@
       "id": "git",
       "type": "keyword",
       "name": "Recherche",
-      "description": "Recherche de fichiers dans /home/ben/Documents/GIT_Projets",
+      "description": "Recherche de fichiers dans /home/ben/Documents/GIT_Projects",
       "default_value": "git"
     },
     {
